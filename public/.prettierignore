@@ -6,3 +6,4 @@ jest.config.js
 .next
 .husky
 postcss.config.js
+dist/
