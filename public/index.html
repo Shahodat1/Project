@@ -1,78 +1,83 @@
 <!doctype html>
 <html lang="en">
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Phone Shop</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/dist/index.css" />
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/dist/index.css" />
+  </head>
   <body>
     <header>
       <div class="logo">
-        <script src="  https://phone-shop.netlify.app/static/media/logo.5ba631a7.svg" crossorigin="anonymous"></script>
-
+        <img src="https://phone-shop.netlify.app/static/media/logo.5ba631a7.svg" alt="Logo" />
         <span class="pro">Products</span>
       </div>
       <button class="cart-btn">🛒 My Cart</button>
     </header>
 
+    <!-- Product Section 1 -->
     <section class="products">
       <h2><span class="black">Our</span> <span class="green">Products</span></h2>
       <div class="product-list">
-        <div class="product">
+        <div class="product" id="product-1">
           <img src="/img/photo_2025-03-15_14-19-05.jpg" alt="Google Pixel" />
           <hr />
-          <p>Google Pixel - Black <span class="price">$ 699</span></p>
+          <p>Google Pixel - Black <span class="price">$699</span></p>
         </div>
-        <div class="product">
+
+        <div class="product" id="product-2">
           <img src="/img/photo_2025-03-15_14-21-21.jpg" alt="Samsung S7" />
           <hr />
-          <p>Samsung S7 <span class="price">$ 599</span></p>
+          <p>Samsung S7 <span class="price">$599</span></p>
         </div>
-        <div class="product">
+
+        <div class="product" id="product-3">
           <img src="/img/photo_2025-03-15_14-22-13.jpg" alt="HTC 10 - Black" />
           <hr />
-          <p>HTC 10 - Black <span class="price">$ 499</span></p>
+          <p>HTC 10 - Black <span class="price">$499</span></p>
         </div>
-        <div class="product">
+
+        <div class="product" id="product-4">
           <img src="/img/photo_2025-03-15_14-22-36.jpg" alt="HTC 10 - White" />
           <hr />
-          <p>HTC 10 - White <span class="price">$ 369</span></p>
-
-          <!-- Savatcha tugmasi (fa-cart-shopping iconi bilan) -->
-          <button class="cart-icon">
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
+          <p>HTC 10 - White <span class="price">$369</span></p>
         </div>
       </div>
     </section>
 
+    <!-- Product Section 2 -->
     <section class="products2">
       <div class="product-list">
-        <div class="product">
-          <img src="/img/photo_2025-03-15_15-46-12.jpg" alt="Google Pixel" />
+        <div class="product" id="product-5">
+          <img src="/img/photo_2025-03-15_15-46-12.jpg" alt="HTC Desire 626s" />
           <hr />
-          <p>HTC Desire 62 6s <span class="price">$ 699</span></p>
+          <p>HTC Desire 626s <span class="price">$699</span></p>
         </div>
 
-        <div class="product">
-          <img src="/img/photo_2025-03-15_15-46-51.jpg" alt="Samsung S7" />
+        <div class="product" id="product-6">
+          <img src="/img/photo_2025-03-15_15-46-51.jpg" alt="Vintage iPhone" />
           <hr />
-          <p>Vintage Iphone <span class="price">$ 599</span></p>
+          <p>Vintage iPhone <span class="price">$599</span></p>
         </div>
-        <div class="product">
-          <img src="/img/photo_2025-03-15_15-47-17.jpg" alt="HTC 10 - Black" />
+
+        <div class="product" id="product-7">
+          <img src="/img/photo_2025-03-15_15-47-17.jpg" alt="iPhone 7" />
           <hr />
-          <p>Iphone 7 <span class="price">$ 499</span></p>
+          <p>iPhone 7 <span class="price">$499</span></p>
         </div>
-        <div class="product">
-          <img src="/img/photo_2025-03-15_15-47-47.jpg" alt="HTC 10 - White" />
+
+        <div class="product" id="product-8">
+          <img src="/img/photo_2025-03-15_15-47-47.jpg" alt="Smashed iPhone" />
           <hr />
-          <p>Smashed Iphone <span class="price">$ 369</span></p>
+          <p>Smashed iPhone <span class="price">$369</span></p>
         </div>
       </div>
     </section>
+
+    <div id="root"></div>
   </body>
 </html>
