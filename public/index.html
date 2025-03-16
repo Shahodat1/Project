@@ -28,7 +28,7 @@
 
   <!-- End of Header -->
 
-  <div class="products">
+   <div class="products">
     <div class="container">
       <h1>Our Products</h1>
 
@@ -42,8 +42,7 @@
           <p class="phone_price">
             $ 699
           </p>
-
-          <button id="addToCart">
+          <button class="addToCart">
             Add to Cart
           </button>
         </li>
@@ -55,7 +54,7 @@
           <p class="phone_price">
             $ 599
           </p>
-          <button id="addToCart">
+          <button class="addToCart">
             Add to Cart
           </button>
         </li>
@@ -69,7 +68,7 @@
             $ 499
           </p>
 
-          <button id="addToCart">
+          <button class="addToCart">
             Add to Cart
           </button>
         </li>
@@ -83,7 +82,7 @@
             $ 369
           </p>
 
-          <button id="addToCart">
+          <button class="addToCart">
             Add to Cart
           </button>
         </li>
@@ -97,7 +96,7 @@
             $ 249
           </p>
 
-          <button id="addToCart">
+          <button class="addToCart">
             Add to Cart
           </button>
         </li>
@@ -111,7 +110,7 @@
             $ 799
           </p>
 
-          <button id="addToCart">
+          <button class="addToCart">
             Add to Cart
           </button>
         </li>
@@ -125,7 +124,7 @@
             $ 899
           </p>
 
-          <button id="addToCart">
+          <button class="addToCart">
             Add to Cart
           </button>
         </li>
@@ -139,14 +138,35 @@
             $ 199
           </p>
 
-          <button id="addToCart">
+          <button class="addToCart">
             Add to Cart
           </button>
         </li>
       </ul>
     </div>
-  </div>
+  </div> 
 
+  <div id="modal">
+    <h3 class="modal_title">
+      Item Added To Cart
+    </h3>
+    <img src="/img/3.jpg" alt="img" class="modal_img">
+    <h4 class="modal_item_name">
+      HTC 10 - Black
+    </h4>
+    <p class="modal_item_price">
+      Price: $ 499
+    </p>
+    <div class="modal_btns">
+      <button id="store" onclick="closeModal()">
+        Store
+      </button>
+      <button id="goToCart">
+        Go To Cart
+      </button>
+    </div>
+  </div>
+  <script src="/dist/index.js"></script>
 </body>
 
 </html>

@@ -74,6 +74,12 @@ h1{
     border-radius: 5px;
     padding: 30px 10px;
     gap: 10px;
+    transition: all 0.5s ease;
+}
+
+.products_cart:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(43, 83, 117, 0.3), 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .products_img{
@@ -90,7 +96,7 @@ h1{
     color: #2b5375;
 }
 
-#addToCart{
+.addToCart{
     border: 1px solid #296494;
     padding: 10px 18px;
     background-color: #296494;
@@ -100,11 +106,100 @@ h1{
     transition: all 0.5s ease;
 }
 
-#addToCart:hover{
+.addToCart:hover{
     scale: 1.1;
     background-color: #2b5375;
 }
 
-#addToCart:active{
+.addToCart:active{
+    scale: 0.9;
+}
+
+#modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #296494;
+    width: 35%;
+    height: 80%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    gap: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Чтобы модалка была поверх всех элементов */
+}
+
+
+body.modal-open {
+    overflow: hidden;
+    pointer-events: none;
+}
+
+body.modal-open #modal {
+    pointer-events: auto;
+}
+
+
+.modal_title{
+    font-size: 28px;
+    color: #2b5375;
+}
+
+.modal_item_name{
+    font-size: 25px;
+}
+
+.modal_item_price{
+    font-size: medium;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.modal_btns{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#store{
+    border: 1px solid #943d29;
+    padding: 10px 18px;
+    background-color: #943429;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: all 0.5s ease;
+}
+
+#store:hover{
+    scale: 1.1;
+    background-color: #752c2b;
+}
+
+#store:active{
+    scale: 0.9;
+}
+
+#goToCart{
+    border: 1px solid #296494;
+    padding: 10px 18px;
+    background-color: #296494;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: all 0.5s ease;
+}
+
+#goToCart:hover{
+    scale: 1.1;
+    background-color: #2b5375;
+}
+
+#goToCart:active{
     scale: 0.9;
 }

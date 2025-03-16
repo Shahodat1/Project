@@ -1,5 +1,5 @@
 {
-    "name": "quiz",
+    "name": "store",
     "module": "index.ts",
     "type": "module",
     "scripts": {
