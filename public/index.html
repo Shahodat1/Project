@@ -1,83 +1,152 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Phone Shop</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/dist/index.css" />
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <img src="https://phone-shop.netlify.app/static/media/logo.5ba631a7.svg" alt="Logo" />
-        <span class="pro">Products</span>
-      </div>
-      <button class="cart-btn">🛒 My Cart</button>
-    </header>
 
-    <!-- Product Section 1 -->
-    <section class="products">
-      <h2><span class="black">Our</span> <span class="green">Products</span></h2>
-      <div class="product-list">
-        <div class="product" id="product-1">
-          <img src="/img/photo_2025-03-15_14-19-05.jpg" alt="Google Pixel" />
-          <hr />
-          <p>Google Pixel - Black <span class="price">$699</span></p>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🏪 Phone shop</title>
+  <link rel="stylesheet" href="/dist/index.css">
+</head>
 
-        <div class="product" id="product-2">
-          <img src="/img/photo_2025-03-15_14-21-21.jpg" alt="Samsung S7" />
-          <hr />
-          <p>Samsung S7 <span class="price">$599</span></p>
-        </div>
+<body>
+  <!-- Header -->
+  <div class="products_nav">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="84" height="84" fill="#1976D2">
+          <rect x="8" y="28" width="48" height="28" rx="4" ry="4" fill="#64B5F6" />
+          <path d="M8 28H56V20H8z" fill="#BBDEFB" />
+          <path d="M12 20h8v8h-8zM28 20h8v8h-8zM44 20h8v8h-8z" fill="#1976D2" />
+          <rect x="18" y="36" width="12" height="12" fill="#0D47A1" />
+          <path d="M24 48V36h2v12z" fill="#E3F2FD" />
+          <path d="M0 28h64v4H0z" fill="#0D47A1" />
+        </svg>
+      </a>
+      <button id="myCart">🛒 My cart</button>
+    </div>
+  </div>
 
-        <div class="product" id="product-3">
-          <img src="/img/photo_2025-03-15_14-22-13.jpg" alt="HTC 10 - Black" />
-          <hr />
-          <p>HTC 10 - Black <span class="price">$499</span></p>
-        </div>
+  <!-- End of Header -->
 
-        <div class="product" id="product-4">
-          <img src="/img/photo_2025-03-15_14-22-36.jpg" alt="HTC 10 - White" />
-          <hr />
-          <p>HTC 10 - White <span class="price">$369</span></p>
-        </div>
-      </div>
-    </section>
+  <div class="products">
+    <div class="container">
+      <h1>Our Products</h1>
 
-    <!-- Product Section 2 -->
-    <section class="products2">
-      <div class="product-list">
-        <div class="product" id="product-5">
-          <img src="/img/photo_2025-03-15_15-46-12.jpg" alt="HTC Desire 626s" />
-          <hr />
-          <p>HTC Desire 626s <span class="price">$699</span></p>
-        </div>
+      <ul class="products_content">
+        <li class="products_cart">
+          <img src="/img/1.jpg" alt="img" class="products_img">
 
-        <div class="product" id="product-6">
-          <img src="/img/photo_2025-03-15_15-46-51.jpg" alt="Vintage iPhone" />
-          <hr />
-          <p>Vintage iPhone <span class="price">$599</span></p>
-        </div>
+          <h2 class="phone_name">
+            Google Pixel - Black
+          </h2>
+          <p class="phone_price">
+            $ 699
+          </p>
 
-        <div class="product" id="product-7">
-          <img src="/img/photo_2025-03-15_15-47-17.jpg" alt="iPhone 7" />
-          <hr />
-          <p>iPhone 7 <span class="price">$499</span></p>
-        </div>
+          <button id="addToCart">
+            Add to Cart
+          </button>
+        </li>
+        <li class="products_cart">
+          <img src="/img/2.jpg" alt="img" class="products_img">
+          <h2 class="phone_name">
+            Samsung S7
+          </h2>
+          <p class="phone_price">
+            $ 599
+          </p>
+          <button id="addToCart">
+            Add to Cart
+          </button>
+        </li>
+        <li class="products_cart">
+          <img src="/img/3.jpg" alt="img" class="products_img">
 
-        <div class="product" id="product-8">
-          <img src="/img/photo_2025-03-15_15-47-47.jpg" alt="Smashed iPhone" />
-          <hr />
-          <p>Smashed iPhone <span class="price">$369</span></p>
-        </div>
-      </div>
-    </section>
+          <h2 class="phone_name">
+            HTC 10 - Black
+          </h2>
+          <p class="phone_price">
+            $ 499
+          </p>
 
-    <div id="root"></div>
-  </body>
+          <button id="addToCart">
+            Add to Cart
+          </button>
+        </li>
+        <li class="products_cart">
+          <img src="/img/4.jpg" alt="img" class="products_img">
+
+          <h2 class="phone_name">
+            HTC 10 - White
+          </h2>
+          <p class="phone_price">
+            $ 369
+          </p>
+
+          <button id="addToCart">
+            Add to Cart
+          </button>
+        </li>
+        <li class="products_cart">
+          <img src="/img/5.jpg" alt="img" class="products_img">
+
+          <h2 class="phone_name">
+            HTC Desire 626s
+          </h2>
+          <p class="phone_price">
+            $ 249
+          </p>
+
+          <button id="addToCart">
+            Add to Cart
+          </button>
+        </li>
+        <li class="products_cart">
+          <img src="/img/6.jpg" alt="img" class="products_img">
+
+          <h2 class="phone_name">
+            Vintage Iphone
+          </h2>
+          <p class="phone_price">
+            $ 799
+          </p>
+
+          <button id="addToCart">
+            Add to Cart
+          </button>
+        </li>
+        <li class="products_cart">
+          <img src="/img/7.jpg" alt="img" class="products_img">
+
+          <h2 class="phone_name">
+            Iphone 7
+          </h2>
+          <p class="phone_price">
+            $ 899
+          </p>
+
+          <button id="addToCart">
+            Add to Cart
+          </button>
+        </li>
+        <li class="products_cart">
+          <img src="/img/8.jpg" alt="img" class="products_img">
+
+          <h2 class="phone_name">
+            Smashed Iphone
+          </h2>
+          <p class="phone_price">
+            $ 199
+          </p>
+
+          <button id="addToCart">
+            Add to Cart
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+
 </html>
