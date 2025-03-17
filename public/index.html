@@ -16,7 +16,7 @@
         <img src="https://phone-shop.netlify.app/static/media/logo.5ba631a7.svg" alt="Logo" />
         <span class="pro">Products</span>
       </div>
-      <button class="cart-btn">🛒 My Cart</button>
+      <button class="cart-btn">🛒 My Cart (<span id="cart-count">0</span>)</button>
     </header>
 
     <!-- Product Section 1 -->
@@ -24,27 +24,43 @@
       <h2><span class="black">Our</span> <span class="green">Products</span></h2>
       <div class="product-list">
         <div class="product" id="product-1">
-          <img src="/img/photo_2025-03-15_14-19-05.jpg" alt="Google Pixel" />
+          <a href="google-pixel.html">
+            <img src="/img/photo_2025-03-15_14-19-05.jpg" alt="Google Pixel" />
+          </a>
           <hr />
           <p>Google Pixel - Black <span class="price">$699</span></p>
+          <button class="add-to-cart" cart-id="1" data-name="Google Pixel" data-price="699">Add to Cart</button>
+          <a href="details-google-pixel.html" class="details-btn"></a>
         </div>
 
         <div class="product" id="product-2">
-          <img src="/img/photo_2025-03-15_14-21-21.jpg" alt="Samsung S7" />
+          <a href="details-samsung-s7.html">
+            <img src="/img/photo_2025-03-15_14-21-21.jpg" alt="Samsung S7" />
+          </a>
           <hr />
           <p>Samsung S7 <span class="price">$599</span></p>
+          <button class="add-to-cart" cart-id="2" data-name="Samsung S7" data-price="599">Add to Cart</button>
+          <a href="details-samsung-s7.html" class="details-btn"></a>
         </div>
 
         <div class="product" id="product-3">
-          <img src="/img/photo_2025-03-15_14-22-13.jpg" alt="HTC 10 - Black" />
+          <a href="details-htc-10-black.html">
+            <img src="/img/photo_2025-03-15_14-22-13.jpg" alt="HTC 10 - Black" />
+          </a>
           <hr />
           <p>HTC 10 - Black <span class="price">$499</span></p>
+          <button class="add-to-cart" cart-id="3" data-name="HTC 10" data-price="499">Add to Cart</button>
+          <a href="details-htc-10-black.html" class="details-btn"></a>
         </div>
 
         <div class="product" id="product-4">
-          <img src="/img/photo_2025-03-15_14-22-36.jpg" alt="HTC 10 - White" />
+          <a href="details-htc-10-white.html">
+            <img src="/img/photo_2025-03-15_14-22-36.jpg" alt="HTC 10 - White" />
+          </a>
           <hr />
           <p>HTC 10 - White <span class="price">$369</span></p>
+          <button class="add-to-cart" cart-id="4" data-name="HTC 10 White" data-price="369">Add to Cart</button>
+          <a href="details-htc-10-white.html" class="details-btn">View Details</a>
         </div>
       </div>
     </section>
@@ -53,31 +69,45 @@
     <section class="products2">
       <div class="product-list">
         <div class="product" id="product-5">
-          <img src="/img/photo_2025-03-15_15-46-12.jpg" alt="HTC Desire 626s" />
+          <a href="details-htc-desire-626s.html">
+            <img src="/img/photo_2025-03-15_15-46-12.jpg" alt="HTC Desire 626s" />
+          </a>
           <hr />
           <p>HTC Desire 626s <span class="price">$699</span></p>
+          <button class="add-to-cart" cart-id="5" data-name="HTC Desire 626s" data-price="699">Add to Cart</button>
+          <a href="details-htc-desire-626s.html" class="details-btn">View Details</a>
         </div>
 
         <div class="product" id="product-6">
-          <img src="/img/photo_2025-03-15_15-46-51.jpg" alt="Vintage iPhone" />
+          <a href="details-vintage-iphone.html">
+            <img src="/img/photo_2025-03-15_15-46-51.jpg" alt="Vintage iPhone" />
+          </a>
           <hr />
           <p>Vintage iPhone <span class="price">$599</span></p>
+          <button class="add-to-cart" cart-id="6" data-name="Vintage iPhone" data-price="599">Add to Cart</button>
+          <a href="details-vintage-iphone.html" class="details-btn">View Details</a>
         </div>
 
         <div class="product" id="product-7">
-          <img src="/img/photo_2025-03-15_15-47-17.jpg" alt="iPhone 7" />
+          <a href="details-iphone7.html">
+            <img src="/img/photo_2025-03-15_15-47-17.jpg" alt="iPhone 7" />
+          </a>
           <hr />
           <p>iPhone 7 <span class="price">$499</span></p>
+          <button class="add-to-cart" cart-id="7" data-name="iPhone 7" data-price="499">Add to Cart</button>
+          <a href="details-iphone7.html" class="details-btn">View Details</a>
         </div>
 
         <div class="product" id="product-8">
-          <img src="/img/photo_2025-03-15_15-47-47.jpg" alt="Smashed iPhone" />
+          <a href="details-smashed-iphone.html">
+            <img src="/img/photo_2025-03-15_15-47-47.jpg" alt="Smashed iPhone" />
+          </a>
           <hr />
           <p>Smashed iPhone <span class="price">$369</span></p>
+          <button class="add-to-cart" cart-id="8" data-name="Smashed iPhone" data-price="369">Add to Cart</button>
+          <a href="details-smashed-iphone.html" class="details-btn">View Details</a>
         </div>
       </div>
     </section>
-
-    <div id="root"></div>
   </body>
 </html>
