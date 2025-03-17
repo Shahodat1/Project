@@ -147,3 +147,5 @@ function closeAboutProduct(): void {
 (window as any).closeModal = closeModal;
 (window as any).closeAboutProduct = closeAboutProduct;
 
+
+
