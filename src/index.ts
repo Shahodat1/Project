@@ -134,17 +134,13 @@ function aboutProduct(id: number): void{
     }
 }
 
-function closeAboutProduct() : void{
-    const products = document.querySelector(".products") as HTMLDivElement;
+function closeAboutProduct(): void {
     const aboutProduct = document.querySelector(".aboutProduct") as HTMLDivElement | null;
-    if(aboutProduct){
-        aboutProduct.style.display = "none";
-        if (products) {
-            products.style.display = "block";
-        }
-        
-    }
+    const products = document.querySelector(".products") as HTMLDivElement | null;
+    if (aboutProduct) aboutProduct.style.display = "none";
+    if (products) products.style.display = "block";
 }
+
 
 // Делаем функции доступными глобально
 // Делаем функции доступными глобально
